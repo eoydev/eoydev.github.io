@@ -1,0 +1,83 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+.input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    min-height: 50px;
+}
+
+.select {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Стили для различных элементов и их состояний */
+.hint {
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns ul {
+    flex: 1;
+}
+
+.viewport-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px dashed red;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.viewport-stable_border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px dashed blue;
+    pointer-events: none;
+    z-index: 9998;
+}
