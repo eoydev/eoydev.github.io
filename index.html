@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1>Welcome to Telegram Demo</h1>
-    <p>Hello, <span id="user_first_name"></span>!</p>
+    <p>Hello, <span id="user_first_name_placeholder">Telegram User</span>!</p>
+    <button onclick="DemoApp.requestUserFirstName()">Get User Name</button>
 
-    <!-- Скрипты -->
+    <!-- Загрузка Telegram WebApp -->
     <script src="path/to/telegram-webapp.js" type="application/javascript"></script>
+    <!-- Загрузка ваших скриптов -->
     <script src="path/to/app.js" type="application/javascript"></script>
+    <script src="path/to/tg.js" type="application/javascript"></script>
 </body>
 </html>
